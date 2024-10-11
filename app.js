@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridDisplay = document.querySelector('.grid')
   const scoreDisplay = document.querySelector('#score')
   const resultDisplay = document.querySelector('#result')
-  
-  const WIDTH = 4
 
+  const WIDTH = 4
   const squares = []
   let score = 0
 
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < WIDTH * WIDTH; i++) {
       const square = document.createElement('div')
       fillSquare(square, 0)
-      gridDisplay.appendChild(square);
+      gridDisplay.appendChild(square)
       squares.push(square)
     }
 
